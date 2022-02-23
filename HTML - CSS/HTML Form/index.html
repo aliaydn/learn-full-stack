@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h1>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Sözleşme Onay</legend>
+        <input type="checkbox" name="onay" id="onay" value="1" required />
+        <label for="onay"
+          >Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi
+          onaylıyorum.</label
+        ><br />
+        <input type="submit" value="Formu Kaydet" id="btnk" name="btnk" />
+        <input type="reset" value="Formu Temizle" id="btnt" name="btnt" />
+      </fieldset>
+      <fieldset>
+        <legend>Kullanıcı Bilgileri</legend>
+        <table>
+          <tr>
+            <td>Form Güvenlik ID</td>
+            <td>
+              <input type="text" name="gID" id="gID" value="asfg" disabled />
+              <input type="hidden" name="gID1" id="gID1" value="asfg" />
+            </td>
+          </tr>
+          <tr>
+            <td>Ad</td>
+            <td>
+              <input
+                type="text"
+                name="ad"
+                id="ad"
+                placeholder="adınızı giriniz"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Soyad</td>
+            <td>
+              <input
+                type="text"
+                name="soyad"
+                id="soyad"
+                placeholder="soyadınızı giriniz"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Yaş</td>
+            <td>
+              <input
+                type="number"
+                name="yaş"
+                id="yaş"
+                min="18"
+                max="65"
+                placeholder="yaşınızı giriniz"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="emailinizi giriniz"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Fotoğraf Ekle</td>
+            <td>
+              <input type="file" name="dosya" id="dosya" />
+            </td>
+          </tr>
+          <tr>
+            <td>Ürün Şifre (6 haneli)</td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                maxlength="6"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Diğer Bilgiler</legend>
+        <table>
+          <tr>
+            <th colspan="2">Buradaki alanları Mesleki Deneyimi Kapsar</th>
+          </tr>
+          <tr>
+            <td>Sektöre giriş tarihi</td>
+            <td>
+              <input type="date" name="tarih" id="tarih" value="2022-01-19" />
+            </td>
+          </tr>
+          <tr>
+            <td>Sektör Deneyimi</td>
+            <td>
+              <label for="yıl1">
+                <input type="radio" name="yıl" id="yıl1" value="1" /> 1 - 5 yıl </label
+              ><br />
+              <label for="yıl2">
+                <input type="radio" name="yıl" id="yıl2" value="2" /> 6 - 10 yıl </label
+              ><br />
+              <label for="yıl3">
+                <input type="radio" name="yıl" id="yıl3" value="3" /> 11 - 15
+                yıl </label
+              ><br />
+              <label for="yıl4">
+                <input type="radio" name="yıl" id="yıl4" value="4" /> 15 üzeri
+                yıl </label
+              ><br />
+            </td>
+          </tr>
+          <tr>
+            <td>Programlama Dilleri</td>
+            <td>
+              <select size="5" name="pdil" id="pdil" multiple>
+                <option value="C#">C#</option>
+                <option value="PHP">PHP</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Pascal">Pascal</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Sözleşme Kopyası</legend>
+        <textarea readonly name="sözleşem" id="sözleşme" cols="50" rows="5">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas assumenda amet tempore, id quia minima quibusdam? Qui nostrum suscipit corrupti aspernatur, ullam ab unde officia corporis aut quibusdam tempore, blanditiis, commodi illum? Eum voluptates iusto natus nemo, neque vel laboriosam voluptate! Architecto sint porro minus expedita vero quisquam repellendus corrupti!</textarea
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Mail Listesi</legend>
+        <input type="radio" name="mliste" id="mliste" checked />
+        <label for="mliste">Mail listesine katılmak <b>istiyorum</b></label>
+        <br />
+        <input type="radio" name="mliste" id="mliste1" />
+        <label for="mliste1"
+          >Mail listesine katılmak <b><u>istemiyorum</u></b></label
+        >
+      </fieldset>
+    </form>
+  </body>
+</html>
