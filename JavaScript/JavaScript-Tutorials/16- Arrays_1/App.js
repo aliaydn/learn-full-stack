@@ -13,6 +13,7 @@ console.log(car.length);
 console.log(car[0]);
 console.log(car[3]);
 console.log(car[car.length - 1]); //dizinin length 4 verir -1 yaparsak son elemanı verir.
+console.log(car.at(-1));//sanki bu daha güzel oldu ****
 
 //renault değerini dizinin sonuna ekleyin
 //car[4] = "renault"; //birinci yöntem
